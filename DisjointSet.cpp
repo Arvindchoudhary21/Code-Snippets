@@ -44,9 +44,9 @@ public:
             size[ul_parent_v] += size[ul_parent_u];//so greater size wala increase its size because someone is connecting with this guy
         }
         else{
-            //is size if equal connect anyone to anyone
+            //if size is equal connect anyone to anyone
             parent[ul_parent_v] = ul_parent_u;//connecting v to u so updating parent of v
-            size[ul_parent_u] += size[ul_parent_v]; // so v connecting to u so size of u increase and add the size of v to itself
+            size[ul_parent_u] += size[ul_parent_v]; // so v connecting to u so size of u increase
         }
     }
 };
